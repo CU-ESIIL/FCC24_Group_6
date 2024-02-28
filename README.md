@@ -11,7 +11,7 @@ Welcome to the **[Your Team Name]** repository, an integral part of ESIIL and Ea
 
 ## Group Members
 - Member 1: Natalie Wiley
-- Member 2: Breanna Powers
+- Member 2: Bre Powers
 - Member 3: Kylen Solvik
 - Member 4: Tyler Hoecker
 - Member 5: Luis de Pablo
