@@ -5,6 +5,8 @@ Welcome to the **[Your Team Name]** repository, an integral part of ESIIL and Ea
 ## Our Project
 The goal of this project is to 1) understand (via a model) how different combinations of disturbances such as wildfire, drought, and insects and their impact on aboveground carbon and 2) use said model of these relationships to predict aboveground carbon across the Southern Rockies Ecoregion using GEDI data between 2019 - 2021.
 
+
+
 ## Documentation
 - Access detailed documentation on our [GitHub Pages site](https://your-gh-pages-url/).
 
