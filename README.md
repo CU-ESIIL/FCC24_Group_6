@@ -3,7 +3,7 @@
 Welcome to the **[Your Team Name]** repository, an integral part of ESIIL and Earth Lab's Forest Carbon Codefest. This repository is the central hub for our team, encompassing our project overview, team member information, codebase, and more...
 
 ## Our Project
-[Provide a brief overview of your project here.
+The goal of this project is to 1) understand (via a model) how different combinations of disturbances such as wildfire, drought, and insects and their impact on aboveground carbon and 2) use said model of these relationships to predict aboveground carbon across the Southern Rockies Ecoregion using GEDI data between 2019 - 2021.
 
 ## Documentation
 - Access detailed documentation on our [GitHub Pages site](https://your-gh-pages-url/).
