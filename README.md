@@ -9,7 +9,7 @@ How does the trajectory of carbon recovery vary among different combinations of 
 The goal of this project is to understand trajectories (via a spatial random forest model using GEDI data) of above ground carbon recovery across combinations of disturbance legacies among wildfire, drought, and insects. We aim to understand these trajectories.
 
 ## Documentation
-- Access detailed documentation on our [GitHub Pages site](https://your-gh-pages-url/).
+- Access detailed documentation on our [GitHub Pages site](https://cu-esiil.github.io/FCC24_Group_6/).
 
 
 ## Group Members
