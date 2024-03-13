@@ -16,7 +16,7 @@ This script saves a cleaned csv in ~/data/. The rest of the analyses load from t
 To have a baseline to compare against, we performed spatial kriging on the GEDI above-ground biomass density point estimates. 
 
 ### Random Forest Modeling - Kylen
-Random forest modeling was performed on CyVerse using the R [spatialRF](https://blasbenito.github.io/spatialRF/) package. 
+Random forest modeling was performed on CyVerse using the R [spatialRF](https://blasbenito.github.io/spatialRF/) package. The script for modeling is [spatial_rf_model.R](https://github.com/CU-ESIIL/FCC24_Group_6/tree/gh-pages-documentation/code/analysis/spatial_rf_model.R).
 
 ### Model Evaluation - Kylen
 Both models (kriging and random forest) were trained on a training set consisting of 70% of the GEDI data rows. 15% of the data were used as a validation set and 15% were withheld as a final test set. After training, we computed RMSE and R^2 on the validation set to compare. 
