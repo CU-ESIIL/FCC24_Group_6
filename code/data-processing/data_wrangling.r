@@ -12,6 +12,7 @@ system('cp /data-store/iplant/home/shared/earthlab/linked_disturbance/data/linke
 # read in data
 disturbance_data_raw <- read.csv('~/data/linked_disturbance_data_frame.csv')
 
+# drop unneeded columns
 disturbance_data_clean <- disturbance_data_raw %>%
   select(c("date",
            "agbd",
@@ -43,6 +44,7 @@ disturbance_data_clean <- disturbance_data_raw %>%
            "collectionYrHotDrought")) %>%
   filter(agbd <= 500)
 
+# split data into 70% training, 15% validation, and 15% test sets
 validation_test_indices <- sample(1:nrow(disturbance_data_clean), ceiling(nrow(disturbance_data_clean)*0.30))
 validation_indices <- sample(validation_test_indices, ceiling(length(validation_test_indices)*0.50))
 test_indices <- validation_test_indices[!(validation_test_indices %in% validation_indices)]
@@ -54,4 +56,5 @@ disturbance_data_sets <- disturbance_data_clean %>%
     TRUE ~ "training"
   ))
 
+# write cleaned data to CSV file
 write_csv(disturbance_data_sets, "~/data/linked_disturbance_data_clean.csv")
