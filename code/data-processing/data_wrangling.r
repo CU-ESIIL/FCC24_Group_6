@@ -33,7 +33,7 @@ disturbance_data_clean <- disturbance_data_raw %>%
            "hex_id_50000",
            "hex_id_100000",
            "lat_lowest",
-           "long_lowest",
+           "lon_lowest",
            "utm_z13n_easting",
            "utm_z13n_northing",
            "roadBuffer",
@@ -41,6 +41,14 @@ disturbance_data_clean <- disturbance_data_raw %>%
            "collectionYrFire",
            "collectionYrInsect",
            "collectionYrHotDrought")) %>%
-  filter(agbd <= 500)
+  filter(agbd <= 500) %>%
+  mutate(test_validation_training = "training")
+
+# validation_test_indices <- sample(1:nrow(disturbance_data_clean), ceiling(nrow(disturbance_data_clean)*0.30))
+# validation_indices <- sample(validation_test_indices, ceiling(length(validation_test_indices)*0.50))
+# test_indices <- validation_test_indices[!validation_indices %in% validation_test_indices]
+# 
+# disturbance_data_clean$test_validation_training[validation_indices] <- rep("validation", length(disturbance_data_clean$test_validation_training))
+# disturbance_data_clean$test_validation_training[test_indices] <- rep("test", length(disturbance_data_clean$test_validation_training))
 
 write_csv(disturbance_data_clean, "~/data/linked_disturbance_data_clean.csv")
