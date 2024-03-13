@@ -2,13 +2,15 @@
 
 ## Authors
 
-- Author 1, Affiliation
-- Author 2, Affiliation
-- ...
+- Tyler Hoecker, Vibrant Planet
+- Bre Powers, Northern Arizona University, School of Forestry
+- Natlie Wiley, Brilliant Earth, Sustainability Associate
+- Luis X. de Pablo, University of Colorado Boulder, Department of Ecology and Evolutionary Biology/Biofrontiers Institute
+- Kylen Solvik, University of Colorado Boulder, Department of Geography
 
 ## Abstract
 
-- A brief summary of the research, its objectives, main findings, and conclusions.
+- Forests play a vital role in regulating climate through carbon sequestration. However, forests are increasingly under threat from disturbances like wildfires, droughts, and insect outbreaks. Using remotely-sensed data, forests can be monitored across large spatial scales and 
 
 ## Introduction
 
