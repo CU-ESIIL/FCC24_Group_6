@@ -24,9 +24,8 @@ Forests play a vital role in regulating climate through carbon sequestration. Ho
 
 ## Methodology
 
-- Detailed description of the research methodology.
-- Explanation of data collection and analysis techniques.
-- Justification for methodological choices.
+- Used a random forest model to relate above ground biomass density (AGBD) to years since most recent disturbance for three disturbance types (fire, hot drought, and insects).
+- Compared our model to a null model of AGBD interpolated only from latitude and longitude.
 
 ## Results
 
