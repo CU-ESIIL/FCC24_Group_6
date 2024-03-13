@@ -1,9 +1,12 @@
 # Team 6 - Forest Carbon Code Fest
 
-Welcome to the **[Your Team Name]** repository, an integral part of ESIIL and Earth Lab's Forest Carbon Codefest. This repository is the central hub for our team, encompassing our project overview, team member information, codebase, and more...
+Welcome to the Team 6 repository, an integral part of ESIIL and Earth Lab's Forest Carbon Codefest. This repository is the central hub for our team, encompassing our project overview, team member information, codebase, and more...
 
-## Our Project
-[Provide a brief overview of your project here.
+## Project Question
+How does the trajectory of carbon recovery vary among different combinations of disturbance legacies?
+
+## Our Project Description
+The goal of this project is to understand trajectories (via a spatial random forest model using GEDI data) of above ground carbon recovery across combinations of disturbance legacies among wildfire, drought, and insects. We aim to understand these trajectories.
 
 ## Documentation
 - Access detailed documentation on our [GitHub Pages site](https://your-gh-pages-url/).
