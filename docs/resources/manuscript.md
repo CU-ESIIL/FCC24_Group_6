@@ -2,13 +2,15 @@
 
 ## Authors
 
-- Author 1, Affiliation
-- Author 2, Affiliation
-- ...
+- Tyler Hoecker, Vibrant Planet
+- Bre Powers, Northern Arizona University, School of Forestry
+- Natlie Wiley, Brilliant Earth, Sustainability Associate
+- Luis X. de Pablo, University of Colorado Boulder, Department of Ecology and Evolutionary Biology/Biofrontiers Institute
+- Kylen Solvik, University of Colorado Boulder, Department of Geography
 
 ## Abstract
 
-- A brief summary of the research, its objectives, main findings, and conclusions.
+Forests play a vital role in regulating climate through carbon sequestration. However, forests are increasingly under threat from disturbances like wildfires, droughts, and insect outbreaks. Using remotely-sensed data, forests can be monitored across large spatial scales and at increasingly high resolutions. The Global Ecosystem Dynamics Investigation (GEDI) provides high resolution laser ranging of forests at a global scale, enabling estimates of above-ground biomass density (AGBD). We used these data, in combination with data on disturbance histories, to predict AGBD for sites not covered by GEDI and model recovery trajectories following disturbances in the Southern Rockies ecoregion.
 
 ## Introduction
 
@@ -22,9 +24,8 @@
 
 ## Methodology
 
-- Detailed description of the research methodology.
-- Explanation of data collection and analysis techniques.
-- Justification for methodological choices.
+- Used a random forest model to relate above ground biomass density (AGBD) to years since most recent disturbance for three disturbance types (fire, hot drought, and insects).
+- Compared our model to a null model of AGBD interpolated only from latitude and longitude.
 
 ## Results
 
