@@ -41,14 +41,17 @@ disturbance_data_clean <- disturbance_data_raw %>%
            "collectionYrFire",
            "collectionYrInsect",
            "collectionYrHotDrought")) %>%
-  filter(agbd <= 500) %>%
-  mutate(test_validation_training = "training")
+  filter(agbd <= 500)
 
-# validation_test_indices <- sample(1:nrow(disturbance_data_clean), ceiling(nrow(disturbance_data_clean)*0.30))
-# validation_indices <- sample(validation_test_indices, ceiling(length(validation_test_indices)*0.50))
-# test_indices <- validation_test_indices[!validation_indices %in% validation_test_indices]
-# 
-# disturbance_data_clean$test_validation_training[validation_indices] <- rep("validation", length(disturbance_data_clean$test_validation_training))
-# disturbance_data_clean$test_validation_training[test_indices] <- rep("test", length(disturbance_data_clean$test_validation_training))
+validation_test_indices <- sample(1:nrow(disturbance_data_clean), ceiling(nrow(disturbance_data_clean)*0.30))
+validation_indices <- sample(validation_test_indices, ceiling(length(validation_test_indices)*0.50))
+test_indices <- validation_test_indices[!(validation_test_indices %in% validation_indices)]
 
-write_csv(disturbance_data_clean, "~/data/linked_disturbance_data_clean.csv")
+disturbance_data_sets <- disturbance_data_clean %>%
+  mutate(test_validation_training = case_when(
+    row_number() %in% validation_indices ~ "validation",
+    row_number() %in% test_indices ~ "test",
+    TRUE ~ "training"
+  ))
+
+write_csv(disturbance_data_sets, "~/data/linked_disturbance_data_clean.csv")
