@@ -10,7 +10,7 @@
 
 ## Abstract
 
-- Forests play a vital role in regulating climate through carbon sequestration. However, forests are increasingly under threat from disturbances like wildfires, droughts, and insect outbreaks. Using remotely-sensed data, forests can be monitored across large spatial scales and 
+- Forests play a vital role in regulating climate through carbon sequestration. However, forests are increasingly under threat from disturbances like wildfires, droughts, and insect outbreaks. Using remotely-sensed data, forests can be monitored across large spatial scales and at increasingly high resolutions. The Global Ecosystem Dynamics Investigation (GEDI) provides high resolution laser ranging of forests at a global scale, enabling estimates of above-ground biomass density (AGBD). We used these data, in combination with data on disturbance histories, to predict AGBD for sites not covered by GEDI and model recovery trajectories following disturbances in the Southern Rockies ecoregion.
 
 ## Introduction
 
