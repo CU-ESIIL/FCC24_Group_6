@@ -125,12 +125,12 @@ Both models (the baseline inverse-distance weighting model and the random forest
 ## Results: Disturbance Recovery Trajectories
 ![image](https://github.com/CU-ESIIL/FCC24_Group_6/assets/20931106/6fff997e-a6b5-4bcd-8815-4f8f878f532d)  
 
-LOESS curves showing empirical post-disturbance biomass trajectories for three disturbance types.
+LOESS curves showing empirical post-disturbance biomass trajectories for three disturbance types (colored solid lines) and the mean biomass of samples that did not experience any of the three disturbances in the last 20 years (dashed line).
 
 # Discussion and Conclusion
 <img width="869" alt="image" src="https://github.com/CU-ESIIL/FCC24_Group_6/assets/20931106/6dc3be48-cfc8-4f1e-9995-ed8289bcc873">
 
-Idealized conceptual diagram showing trajectories of live (purple) and dead (orange) biomass pool trajectories after disturbance.
+Idealized conceptual diagram showing trajectories of live (purple) and dead (orange) and total biomass pool (black) trajectories after disturbance; successful (solid) and failed (dashed) recovery trajecetories are illustrated.
 
 This project utilized GEDI lidar sensor data to map and analyze Above Ground Biomass Density (AGBD) in the Southern Rocky Mountain Ecoregion. The application of spatial random forest models provided new insights into the trajectories of carbon recovery following various disturbances, such as drought, insect outbreaks, and fire. We were able to predict AGBD outside of GEDi’s direct coverage and assess the impact of past disturbances on forest carbon storage. Future work will focus on refining these models for  precision and validating models against independent datasets, ensuring their robustness and reliability of predicting effects of disturbance on AGBD. These types of predictive models are useful for informing sustainable forest management under the evolving pressures of climate change.
 
@@ -138,12 +138,7 @@ This project utilized GEDI lidar sensor data to map and analyze Above Ground Bio
 ![image](https://github.com/CU-ESIIL/FCC24_Group_6/assets/122820473/5830be2b-dc72-4376-8ee7-701971c49374) ![image](https://github.com/CU-ESIIL/FCC24_Group_6/assets/122820473/40eb59b0-6e04-47d8-a2bb-5f05165ebbb7) ![image](https://github.com/CU-ESIIL/FCC24_Group_6/assets/122820473/5688c446-665a-4484-b08c-35d8c336d95e)
 
 # Acknowledgments
-Authors:
-*Tyler Hoecker, Vibrant Planet
-*Bre Powers, Northern Arizona University, School of Forestry
-*Natalie Wiley, Brilliant Earth, Sustainability Associate
-*Luis X. de Pablo, University of Colorado Boulder, Department of Ecology and Evolutionary Biology/Biofrontiers Institute
-*Kylen Solvik, University of Colorado Boulder, Department of Geography
+We gratefully acknowledge the work of the "Linked Disturbances" working group that organized during ESIIL's Forest Resilience workshop in spring 2023, who outlined similar research questions and compiled the dataset we used here. Including: Megan Cattau, Kyra Clark-Wolf, Xiulin Gao, Tyler Hoecker, Adam Mahood, Tyler McIntosh, Asha Paudel, and Bre Powers.  
 
 
 
