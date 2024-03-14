@@ -1,4 +1,4 @@
-# Project presentation overview
+# Above Ground Biomass Legacies: Predicting Trajectories of Post Disturbance Recovery across the Southern Rocky Mountain Ecoregion
 *Abstract* - Forests play a vital role in mitigating climate change impacts through carbon sequestration. However, forests are under threat from increasingly frequent and severe disturbances like wildfires, droughts, and insect outbreaks. Using remote sensing data, forests can be monitored across large spatial scales and at increasingly high resolutions to observe forest measurements. The Global Ecosystem Dynamics Investigation (GEDI) provides high resolution laser footprints of forests at large spatial scales, enabling estimates of above-ground biomass density (AGBD). Utilizing these AGBD footprints in combination with data on disturbance histories, we predict AGBD for sites not covered by GEDI and model forest recovery trajectories following disturbances in the Southern Rocky Mountain ecoregion.
 
 *Project Questions*
