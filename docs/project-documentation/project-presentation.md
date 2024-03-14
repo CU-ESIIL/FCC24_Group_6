@@ -69,6 +69,9 @@ model.non.spatial <- spatialRF::rf(
   )
 )
 ```
+- 13 variables were used as predictors in the model, including years since disturbance, location in UTM coordinates, and climatic variables (including actual evapotranspiration and climatic water deficit).
+- We also multiplied each of the disturbance variables by each other (e.g. years since drought * years since fire) as a basic way to capture interactions between disturbances.
+- A full list of predictor variables is available in the Methods section of this website. 
 
 ### Model Evaluation
 Both models (the baseline inverse-distance weighting model and the random forest model) were trained on a training set consisting of 70% of the GEDI data rows. 15% of the data were used as a validation set and 15% were withheld as a final test set. After training, we computed RMSE and R^2 on the validation set to compare.
@@ -88,14 +91,26 @@ The figure illustrates the spatial variability of Above Ground Biomass Density i
 # Results: Random Forest Model vs. Baseline Interpolation - The Biomass Prediction
 ![image](https://github.com/CU-ESIIL/FCC24_Group_6/assets/24379590/ba8163e1-da49-447f-8244-888f709f5729)
 
+- The random forest model outperformed the baseline spatial interpolation model based on RMSE and R^2. 
+
 
 ## Results: Variable Importance
 ![image](https://github.com/CU-ESIIL/FCC24_Group_6/assets/24379590/265cfad0-4ff5-4ae3-9e93-62f4f1d144dd)
 
+- Years since drought and years since fire appear important
+- Interactions (e.g. years since drought * years since fire) also important
+- Years since insect disturbance does not appear very important by itself.
 
 ## Results: Variable Response Curves & Surfaces
 ![image](https://github.com/CU-ESIIL/FCC24_Group_6/assets/24379590/034d9429-e5f2-481a-84ad-970af80ecfe4)
+
+- Shows how predictions change in response to varying years since disturbance (holding other variables constant).
+- We see the basic patterns we'd expect: dip following the disturbance followed by recovery.
+  
 ![image](https://github.com/CU-ESIIL/FCC24_Group_6/assets/24379590/b846ac3c-e975-4b2e-903c-7fc1692aaf8d)
+
+- Shows how predictions change with varying years since fire and years since drought together.
+- We see the lowest aboveground biomass density when there are successive drought and fire disturbances, with 10-15 years since drought and 5-10 years since fire. 
 
 
 ## Results: Disturbance Recovery Trajectories
