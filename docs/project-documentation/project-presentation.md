@@ -129,15 +129,11 @@ This project utilized GEDI lidar sensor data to map and analyze Above Ground Bio
 
 # Acknowledgments
 Authors:
-Tyler Hoecker, Vibrant Planet
-Bre Powers, Northern Arizona University, School of Forestry
-Natlie Wiley, Brilliant Earth, Sustainability Associate
-Luis X. de Pablo, University of Colorado Boulder, Department of Ecology and Evolutionary Biology/Biofrontiers Institute
-Kylen Solvik, University of Colorado Boulder, Department of Geography
-
-
-
-
+-Tyler Hoecker, Vibrant Planet
+-Bre Powers, Northern Arizona University, School of Forestry
+-Natlie Wiley, Brilliant Earth, Sustainability Associate
+-Luis X. de Pablo, University of Colorado Boulder, Department of Ecology and Evolutionary Biology/Biofrontiers Institute
+-Kylen Solvik, University of Colorado Boulder, Department of Geography
 
 
 
