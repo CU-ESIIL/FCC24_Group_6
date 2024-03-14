@@ -22,7 +22,23 @@
 + Time since disturbances; EarthLab “disturbance stack”
   + Fire
   + Insect outbreak
-  + Hotter drought 
+  + Hotter drought
+    
+## Data Exploration & Visualizations
+Visualizations of above ground biomass density versus fire, drought, and insect disturbances were created using Tidyverse ggplot methodology. We also explored the impact of these disturbance types on NDVI and forest type distribution in corelation with trajectories of disturbance recovery visuals. Above ground biomass density was limited to 500 Mg to exclude outliers.
+
+### Range of Above Ground Biomass Distribution Across Southern Rocky Mountain EcoRegion
+![image](https://github.com/CU-ESIIL/FCC24_Group_6/assets/122820473/5ec244fc-5979-4387-8e37-b78386feb41a)
+
+The figure illustrates the spatial variability of Above Ground Biomass Density in the Southern Rocky Mountain Ecoregion, with a color gradient reflecting biomass levels, ranging from low (yellow) to high (dark purple), based on GEDI lidar sensor data.
+
+### Example of Disturbance Impact on Above Ground Biomass - Wildfire
+![image](https://github.com/CU-ESIIL/FCC24_Group_6/assets/122820473/a7fc6657-223f-42cf-8c9d-6adfd5c9f285)
+
+# Results: Random Forest Model vs. Baseline Interpolation - The Biomass Prediction
+![image](https://github.com/CU-ESIIL/FCC24_Group_6/assets/24379590/ba8163e1-da49-447f-8244-888f709f5729)
+
+*The random forest model outperformed the baseline spatial interpolation model based on RMSE and R^2.* 
 
 # Methods - The Model and Data Exploration
 ## Data Analysis
@@ -77,23 +93,6 @@ model.non.spatial <- spatialRF::rf(
 Both models (the baseline inverse-distance weighting model and the random forest model) were trained on a training set consisting of 70% of the GEDI data rows. 15% of the data were used as a validation set and 15% were withheld as a final test set. After training, we computed RMSE and R^2 on the validation set to compare.
 
 
-## Data Exploration & Visualizations
-Visualizations of above ground biomass density versus fire, drought, and insect disturbances were created using Tidyverse ggplot methodology. We also explored the impact of these disturbance types on NDVI and forest type distribution in corelation with trajectories of disturbance recovery visuals. Above ground biomass density was limited to 500 Mg to exclude outliers.
-
-### Range of Above Ground Biomass Distribution Across Southern Rocky Mountain EcoRegion
-![image](https://github.com/CU-ESIIL/FCC24_Group_6/assets/122820473/5ec244fc-5979-4387-8e37-b78386feb41a)
-
-The figure illustrates the spatial variability of Above Ground Biomass Density in the Southern Rocky Mountain Ecoregion, with a color gradient reflecting biomass levels, ranging from low (yellow) to high (dark purple), based on GEDI lidar sensor data.
-
-### Example of Disturbance Impact on Above Ground Biomass - Wildfire
-![image](https://github.com/CU-ESIIL/FCC24_Group_6/assets/122820473/a7fc6657-223f-42cf-8c9d-6adfd5c9f285)
-
-# Results: Random Forest Model vs. Baseline Interpolation - The Biomass Prediction
-![image](https://github.com/CU-ESIIL/FCC24_Group_6/assets/24379590/ba8163e1-da49-447f-8244-888f709f5729)
-
-- The random forest model outperformed the baseline spatial interpolation model based on RMSE and R^2. 
-
-
 ## Results: Variable Importance
 ![image](https://github.com/CU-ESIIL/FCC24_Group_6/assets/24379590/265cfad0-4ff5-4ae3-9e93-62f4f1d144dd)
 
@@ -123,13 +122,18 @@ LOESS curves showing empirical post-disturbance biomass trajectories for three d
 
 Idealized conceptual diagram showing trajectories of live (purple) and dead (orange) biomass pool trajectories after disturbance.
 
-
+This project utilized GEDI lidar sensor data to map and analyze Above Ground Biomass Density (AGBD) in the Southern Rocky Mountain Ecoregion. The application of spatial random forest models provided new insights into the trajectories of carbon recovery following various disturbances, such as drought, insect outbreaks, and fire. We were able to predict AGBD outside of GEDi’s direct coverage and assess the impact of past disturbances on forest carbon storage. Future work will focus on refining these models for  precision and validating models against independent datasets, ensuring their robustness and reliability of predicting effects of disturbance on AGBD. These types of predictive models are useful for informing sustainable forest management under the evolving pressures of climate change.
 
 # Sketches by Luis X. de Pablo
 ![image](https://github.com/CU-ESIIL/FCC24_Group_6/assets/122820473/5830be2b-dc72-4376-8ee7-701971c49374) ![image](https://github.com/CU-ESIIL/FCC24_Group_6/assets/122820473/40eb59b0-6e04-47d8-a2bb-5f05165ebbb7) ![image](https://github.com/CU-ESIIL/FCC24_Group_6/assets/122820473/5688c446-665a-4484-b08c-35d8c336d95e)
 
 # Acknowledgments
-
+Authors:
+Tyler Hoecker, Vibrant Planet
+Bre Powers, Northern Arizona University, School of Forestry
+Natlie Wiley, Brilliant Earth, Sustainability Associate
+Luis X. de Pablo, University of Colorado Boulder, Department of Ecology and Evolutionary Biology/Biofrontiers Institute
+Kylen Solvik, University of Colorado Boulder, Department of Geography
 
 
 
