@@ -62,7 +62,7 @@ Visualizations of above ground biomass density versus fire, drought, and insect 
 ### Range of Above Ground Biomass Distribution Across Southern Rocky Mountain EcoRegion
 ![image](https://github.com/CU-ESIIL/FCC24_Group_6/assets/122820473/5ec244fc-5979-4387-8e37-b78386feb41a)
 
-This figure displays the distribution of Above Ground Biomass Density across the Southern Rockies, with colors indicating biomass levels from low (yellow) to high (dark purple), derived from GEDI's precise laser measurements. It offers a snapshot of the region's biomass variability and concentration.
+The figure illustrates the spatial variability of Above Ground Biomass Density in the Southern Rocky Mountain Ecoregion, with a color gradient reflecting biomass levels, ranging from low (yellow) to high (dark purple), based on GEDI lidar sensor data.
 
 ### Example of Disturbance Impact on Above Ground Biomass - Wildfire
 ![image](https://github.com/CU-ESIIL/FCC24_Group_6/assets/122820473/a7fc6657-223f-42cf-8c9d-6adfd5c9f285)
