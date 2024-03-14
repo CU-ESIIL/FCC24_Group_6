@@ -46,6 +46,7 @@ idw_sre <- mask(nn["agbd_idw"], sre)
 
 ### Example of Weighted Interpolation 
 <img width="312" alt="image" src="https://github.com/CU-ESIIL/FCC24_Group_6/assets/20931106/496d1dbd-c9a3-46ea-a8b1-7bf78a54a272">
+
 Spatial interpolation using inverse-distance weighting. This simple interpolation method was used as a "null model" against which to evaluate our random forest model.
 
 
@@ -99,6 +100,7 @@ The figure illustrates the spatial variability of Above Ground Biomass Density i
 
 ## Results: Disturbance Recover Trajectories
 ![image](https://github.com/CU-ESIIL/FCC24_Group_6/assets/20931106/6fff997e-a6b5-4bcd-8815-4f8f878f532d)
+
 LOESS curves showing post-dissturbance biomass trajectories for three disturbance types.
 
 # Conclusion
