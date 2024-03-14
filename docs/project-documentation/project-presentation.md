@@ -40,8 +40,9 @@ idw_sre <- mask(nn["agbd_idw"], sre)
 ```
 
 ### Example of Weighted Interpolation 
-![image](https://github.com/CU-ESIIL/FCC24_Group_6/assets/122820473/1b9776a7-397c-4412-82e4-f15be0bf205f)
-TYLER - ADD SHORT DESCRIPTION OF FIGURE HERE
+<img width="312" alt="image" src="https://github.com/CU-ESIIL/FCC24_Group_6/assets/20931106/496d1dbd-c9a3-46ea-a8b1-7bf78a54a272">
+Spatial interpolation using inverse-distance weighting. This simple interpolation method was used as a "null model" against which to evaluate our random forest model.
+
 
 ### Random Forest Modeling
 Random forest modeling was performed on CyVerse using the R [spatialRF](https://blasbenito.github.io/spatialRF/) package. The script for modeling is [spatial_rf_model.R](https://github.com/CU-ESIIL/FCC24_Group_6/tree/gh-pages-documentation/code/analysis/spatial_rf_model.R).
