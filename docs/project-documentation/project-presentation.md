@@ -49,7 +49,7 @@ The figure illustrates the spatial variability of Above Ground Biomass Density i
 
 ## Data Analysis
 
-### Baseline  (null) model: Inverse-distance weighted interpolation
+### Null model (inverse-distance weighted spatial interpolation) 
 We evaluated the perfomance of a model that included informaiton about disturbance and environmental conditions against a null model based only on geographic location. We developed our null model based on a simple spatial interpolation among GEDI footprints using inverse distance weighting. Estimates were based on values of the 50 nearest neighbors, weighted by a power of 2 (i.e., inverse distance squared). We used the `gstat` package, impleneted in R.  
 
 ```
@@ -67,7 +67,6 @@ nn <- interpolate(r, gs, debug.level=0)
 idw_sre <- mask(nn["agbd_idw"], sre)
 ```
 
-### Example of Weighted Interpolation 
 <img width="312" alt="image" src="https://github.com/CU-ESIIL/FCC24_Group_6/assets/20931106/496d1dbd-c9a3-46ea-a8b1-7bf78a54a272">
 
 Spatial interpolation using inverse-distance weighting. This simple interpolation method was used as a "null model" against which to evaluate our random forest model.
