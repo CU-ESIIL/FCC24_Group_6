@@ -118,7 +118,10 @@ The figure illustrates the spatial variability of Above Ground Biomass Density i
 
 LOESS curves showing empirical post-disturbance biomass trajectories for three disturbance types.
 
-# Conclusion
+# Discussion and Conclusion
+<img width="869" alt="image" src="https://github.com/CU-ESIIL/FCC24_Group_6/assets/20931106/6dc3be48-cfc8-4f1e-9995-ed8289bcc873">
+
+Idealized conceptual diagram showing trajectories of live (purple) and dead (orange) biomass pool trajectories after disturbance.
 
 
 
