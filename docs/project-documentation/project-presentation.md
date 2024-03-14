@@ -29,7 +29,7 @@ To have a baseline to compare against, we performed spatial interpolation using 
 
 ### Example of Weighted Interpolation 
 ![image](https://github.com/CU-ESIIL/FCC24_Group_6/assets/122820473/1b9776a7-397c-4412-82e4-f15be0bf205f)
-
+TYLER - ADD SHORT DESCRIPTION OF FIGURE HERE
 
 ### Random Forest Modeling
 Random forest modeling was performed on CyVerse using the R [spatialRF](https://blasbenito.github.io/spatialRF/) package. The script for modeling is [spatial_rf_model.R](https://github.com/CU-ESIIL/FCC24_Group_6/tree/gh-pages-documentation/code/analysis/spatial_rf_model.R).
@@ -49,16 +49,22 @@ Visualizations of above ground biomass density versus fire, drought, and insect 
 ### Range of Above Ground Biomass Distribution Across Southern Rocky Mountain EcoRegion
 ![image](https://github.com/CU-ESIIL/FCC24_Group_6/assets/122820473/5ec244fc-5979-4387-8e37-b78386feb41a)
 
+BRE - ADD SHORT DESCRIPTION OF FIGURE HERE
+
 ### Example of Disturbance Impact on Above Ground Biomass - Wildfire
 ![image](https://github.com/CU-ESIIL/FCC24_Group_6/assets/122820473/a7fc6657-223f-42cf-8c9d-6adfd5c9f285)
 
 # Results: Random Forest Model vs. Baseline Interpolation - The Biomass Prediction
-*INSERT COOL Results HERE*
+KYLEN - *INSERT COOL Results DESCRIPTION HERE*
 ![image](https://github.com/CU-ESIIL/FCC24_Group_6/assets/122820473/afd29635-ee50-4c2e-932c-5933cab01bf9)
 ![image](https://github.com/CU-ESIIL/FCC24_Group_6/assets/122820473/683d9846-a9e3-4516-a379-0e3bf6cd8f95)
 
 # Disturbance Recover Trajectories
 ![image](https://github.com/CU-ESIIL/FCC24_Group_6/assets/122820473/1e18caa7-1738-4a66-8ee6-6dba98515970)
+LUIS - ADD SHORT DESCRIPTION OF FIGURE HERE
+
+# Conclusion
+  SOMEONE ADD STUFF HERE MY BRAIN HAS ROTTED
 
 
 
