@@ -26,7 +26,9 @@ Both models (the baseine inverse-distance weighting model and the random forest 
 Visualizations of above ground biomass density versus fire, drought, and insect disturbances were created using Tidyverse ggplot methodology. We also explored the impact of these disturbance types on NDVI and forest type distribution in corelation with trajectories of disturbance recovery visuals. Above ground biomass density was limited to 500 Mg due to time constraints.
 
 ## Conclusions
-Summary of the full workflow and its outcomes. Reflect on the methods used.
+See [our presentation](https://cu-esiil.github.io/FCC24_Group_6/project-documentation/project-presentation/) for full dicussion and conclusion.
 
 ## References
-Citations of tools, data sources, and other references used.
+- Hammond, W.M., Williams, A.P., Abatzoglou, J.T. et al. Global field observations of tree die-off reveal hotter-drought fingerprint for Earth’s forests. Nat Commun 13, 1761 (2022). https://doi.org/10.1038/s41467-022-29289-2
+- Wright MN, Ziegler A (2017). “ranger: A Fast Implementation of Random Forests for High Dimensional Data in C++ and R.” Journal of Statistical Software, 77(1), 1–17. doi:10.18637/jss.v077.i01.
+- Benito BM (2021). spatialRF: Easy Spatial Regression with Random Forest. doi:10.5281/zenodo.4745208, R package version 1.1.3, https://blasbenito.github.io/spatialRF/.
