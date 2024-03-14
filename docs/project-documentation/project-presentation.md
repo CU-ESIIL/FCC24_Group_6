@@ -98,11 +98,10 @@ The figure illustrates the spatial variability of Above Ground Biomass Density i
 ![image](https://github.com/CU-ESIIL/FCC24_Group_6/assets/24379590/b846ac3c-e975-4b2e-903c-7fc1692aaf8d)
 
 
-## Results: Disturbance Recover Trajectories
+## Results: Disturbance Recovery Trajectories
 ![image](https://github.com/CU-ESIIL/FCC24_Group_6/assets/20931106/6fff997e-a6b5-4bcd-8815-4f8f878f532d)  
 
-
-LOESS curves showing post-disturbance biomass trajectories for three disturbance types.
+LOESS curves showing empirical post-disturbance biomass trajectories for three disturbance types.
 
 # Conclusion
 
@@ -111,6 +110,7 @@ LOESS curves showing post-disturbance biomass trajectories for three disturbance
 # Sketches by Luis X. de Pablo
 ![image](https://github.com/CU-ESIIL/FCC24_Group_6/assets/122820473/5830be2b-dc72-4376-8ee7-701971c49374) ![image](https://github.com/CU-ESIIL/FCC24_Group_6/assets/122820473/40eb59b0-6e04-47d8-a2bb-5f05165ebbb7) ![image](https://github.com/CU-ESIIL/FCC24_Group_6/assets/122820473/5688c446-665a-4484-b08c-35d8c336d95e)
 
+# Acknowledgments
 
 
 
