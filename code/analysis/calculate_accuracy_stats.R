@@ -4,7 +4,7 @@ library(Metrics)
 
 # Read in predictions
 baseline_df <- read_csv('~/data/valid_null.csv')
-val_df <- read_csv('~/data/predicted_val.csv')
+val_df <- read_csv('~/data/predicted_val_v3.csv')
 
 # Need to remove points with NA values for peakNDVI (since RF can't predict on that)
 # df_temp <- read_csv('~/data/linked_disturbance_data_clean.csv')
@@ -38,8 +38,6 @@ ggplot() +
   geom_histogram(data = baseline_df, aes(x = residual),  fill = "transparent", col='blue',bins=100) +
   scale_color_manual(name=c('RF','Baseline')) +
   labs(x='Model Residual (Mg/ha)', y='Count', title='Model Residual Histograms: Baseline vs. RF')
-  theme_minimal() +
-  theme(legend.position='right')
   
   
 ggplot() +

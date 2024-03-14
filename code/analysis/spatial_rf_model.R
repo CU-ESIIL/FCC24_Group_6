@@ -5,6 +5,7 @@
 # Load required packages
 library(tidyverse)
 library(spatialRF)
+library(ranger)
 library(Metrics)
 
 # Set random seed
@@ -29,9 +30,9 @@ disturbance.variable.names <- c('yrsSinceFire','yrsSinceHotDrought','yrsSinceIns
                                 'yrsSinceFire..x..yrsSinceInsect')
 
 # Replace some NAs
-df$yrsSinceHotDrought <- df$yrsSinceHotDrought %>% replace_na(40)
-df$yrsSinceFire <- df$yrsSinceFire %>% replace_na(40)
-df$yrsSinceInsect <- df$yrsSinceInsect %>% replace_na(40)
+df$yrsSinceHotDrought <- df$yrsSinceHotDrought %>% replace_na(21)
+df$yrsSinceFire <- df$yrsSinceFire %>% replace_na(21)
+df$yrsSinceInsect <- df$yrsSinceInsect %>% replace_na(21)
 
 var_list <- c('yrsSinceHotDrought','yrsSinceFire','yrsSinceInsect')
 for (var_name_i in var_list) {
@@ -60,14 +61,18 @@ model.non.spatial <- spatialRF::rf(
   seed = random.seed,
   verbose = FALSE,
   ranger.arguments=list(
-    num.trees=250,
+    num.trees=500,
     mtry=3,
-    min.node.size=100
+    min.node.size=25
   )
 )
 model.non.spatial
 
-save(model.non.spatial, file='model2')
+# Save model object
+save(model.non.spatial, file='model4')
+
+# Can reload with:
+# load('./model4')
 
 # Plot residuals
 spatialRF::plot_residuals_diagnostics(
@@ -83,17 +88,33 @@ spatialRF::plot_response_curves(
   ncol = 3
 )
 
-# # Plot dependence surface
-# spatialRF::plot_response_surface(
-#   model.non.spatial,
-#   a='yrsSinceFire',
-#   b='yrsSinceHotDrought',
-# )
+# Plot dependence surface
+# Sometimes this plot doesn't show up right away and you need to refresh the page
+spatialRF::plot_response_surface(
+  model.non.spatial,
+  a='yrsSinceFire',
+  b='yrsSinceHotDrought',
+)
 
+spatialRF::plot_response_surface(
+  model.non.spatial,
+  a='yrsSinceFire',
+  b='yrsSinceInsect',
+)
+
+spatialRF::plot_response_surface(
+  model.non.spatial,
+  a='yrsSinceInsect',
+  b='yrsSinceHotDrought',
+)
+
+
+# Plot importance
 spatialRF::plot_importance(
   model.non.spatial,
   verbose = FALSE
   )
+
 
 # Inference
 predicted_model <- stats::predict(
@@ -102,6 +123,7 @@ predicted_model <- stats::predict(
   type = "response"
 )
 
+
 # Write results
 val_df$predicted <- predicted_model$predictions
-write_csv(val_df, file='~/data/predicted_val.csv')
+write_csv(val_df, file='~/data/predicted_val_v3.csv')
