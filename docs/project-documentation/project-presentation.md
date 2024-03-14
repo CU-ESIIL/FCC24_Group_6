@@ -45,15 +45,27 @@ Spatial interpolation using inverse-distance weighting. This simple interpolatio
 
 
 ### Random Forest Modeling
-Random forest modeling was performed on CyVerse using the R [spatialRF](https://blasbenito.github.io/spatialRF/) package. The script for modeling is [spatial_rf_model.R](https://github.com/CU-ESIIL/FCC24_Group_6/tree/gh-pages-documentation/code/analysis/spatial_rf_model.R).
+Random forest modeling was performed on CyVerse using the R [spatialRF](https://blasbenito.github.io/spatialRF/) package. The script for modeling is [code/analysis/spatial_rf_model.R](https://github.com/CU-ESIIL/FCC24_Group_6/tree/gh-pages-documentation/code/analysis/spatial_rf_model.R). We trained a model with 500 trees, a minimum node size of 25, and mtry (the number of variables to possibly split with in each node) set to 3. 
 
 
-`KYLEN - *INSERT SNIPPET OF MODEL CODE HERE`
+```
+model.non.spatial <- spatialRF::rf(
+  data = train_df,
+  dependent.variable.name = dependent.variable.name,
+  predictor.variable.names = predictor.variable.names,
+  xy = train_xy,
+  seed = random.seed,
+  verbose = FALSE,
+  ranger.arguments=list(
+    num.trees=500,
+    mtry=3,
+    min.node.size=25
+  )
+)
+```
 
 ### Model Evaluation
-Both models (null and random forest) were trained on a training set consisting of 70% of the GEDI data rows. 15% of the data were used as a validation set and 15% were withheld as a final test set. After training, we computed RMSE and R^2 on the validation set to compare. 
-
-![image](https://github.com/CU-ESIIL/FCC24_Group_6/assets/122820473/d245f085-78ab-4553-8a78-255fe7866c94)
+Both models (the baseine inverse-distance weighting model and the random forest model) were trained on a training set consisting of 70% of the GEDI data rows. 15% of the data were used as a validation set and 15% were withheld as a final test set. After training, we computed RMSE and R^2 on the validation set to compare.
 
 
 ## Data Exploration & Visualizations
@@ -68,13 +80,17 @@ The figure illustrates the spatial variability of Above Ground Biomass Density i
 ![image](https://github.com/CU-ESIIL/FCC24_Group_6/assets/122820473/a7fc6657-223f-42cf-8c9d-6adfd5c9f285)
 
 # Results: Random Forest Model vs. Baseline Interpolation - The Biomass Prediction
-KYLEN - *INSERT COOL Results DESCRIPTION HERE*
-![image](https://github.com/CU-ESIIL/FCC24_Group_6/assets/122820473/afd29635-ee50-4c2e-932c-5933cab01bf9)
-![image](https://github.com/CU-ESIIL/FCC24_Group_6/assets/122820473/683d9846-a9e3-4516-a379-0e3bf6cd8f95)
+![image](https://github.com/CU-ESIIL/FCC24_Group_6/assets/24379590/ba8163e1-da49-447f-8244-888f709f5729)
 
-## Results: Response Surfaces
-![image](https://github.com/CU-ESIIL/FCC24_Group_6/assets/122820473/7091c3c6-2fdd-41bb-ac16-5257f4334a1f)
-TYLER - ADD CONTEXT TO THIS FIGURE HERE
+
+## Results: Variable Importance
+![image](https://github.com/CU-ESIIL/FCC24_Group_6/assets/24379590/265cfad0-4ff5-4ae3-9e93-62f4f1d144dd)
+
+
+## Results: Variable Response Curves & Surfaces
+![image](https://github.com/CU-ESIIL/FCC24_Group_6/assets/24379590/034d9429-e5f2-481a-84ad-970af80ecfe4)
+![image](https://github.com/CU-ESIIL/FCC24_Group_6/assets/24379590/b846ac3c-e975-4b2e-903c-7fc1692aaf8d)
+
 
 ## Results: Disturbance Recover Trajectories
 ![image](https://github.com/CU-ESIIL/FCC24_Group_6/assets/122820473/1e18caa7-1738-4a66-8ee6-6dba98515970)
