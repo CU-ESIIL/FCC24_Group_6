@@ -40,3 +40,6 @@ Dataset is accessible. Goals/splitting up work:
 5. Documentation
 
 ## Day 3: March 14, 2024 - CU Boulder
+
+- Finalized presentation on github pages website.
+- Split up presentation between group members.
