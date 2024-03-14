@@ -25,7 +25,7 @@ Hotter drought
 ### Baseline  (null) model: Inverse-distance weighted interpolation
 To have a baseline to compare against, we performed spatial interpolation using inverse distance weighting on the GEDI above-ground biomass density point estimates. 
 
-` gs <- gstat(formula = agbd~1, 
+``` gs <- gstat(formula = agbd~1, 
             locations = ~x+y, 
             data = full_df[,c("x","y","agbd")], 
             nmax = 50, 
@@ -35,7 +35,7 @@ To have a baseline to compare against, we performed spatial interpolation using 
 nn <- interpolate(r, gs, debug.level=0)
 
 # Mask to SRE
-idw_sre <- mask(nn["agbd_idw"], sre)`
+idw_sre <- mask(nn["agbd_idw"], sre)```
 
 ### Example of Weighted Interpolation 
 ![image](https://github.com/CU-ESIIL/FCC24_Group_6/assets/122820473/1b9776a7-397c-4412-82e4-f15be0bf205f)
