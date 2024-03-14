@@ -1,4 +1,4 @@
-# Post-disturbance aboveground biomass trajectories across the Southern Rocky Mountain Ecoregion 
+# Post-disturbance trajectories of aboveground biomass across the Southern Rocky Mountain Ecoregion 
 Authors (listed alphabetically)
 
 Tyler Hoecker, Vibrant Planet PBC
@@ -78,6 +78,7 @@ Random forest modeling was performed on CyVerse using the R [spatialRF](https://
 
 
 ```
+# Fit random forest model
 model.non.spatial <- spatialRF::rf(
   data = train_df,
   dependent.variable.name = dependent.variable.name,
