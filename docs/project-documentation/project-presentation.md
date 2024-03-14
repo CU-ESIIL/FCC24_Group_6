@@ -53,7 +53,7 @@ Visualizations of above ground biomass density versus fire, drought, and insect 
 ![image](https://github.com/CU-ESIIL/FCC24_Group_6/assets/122820473/a7fc6657-223f-42cf-8c9d-6adfd5c9f285)
 
 # Results: Random Forest Model vs. Baseline Interpolation - The Biomass Prediction
-*INSERT COOL SHIT HERE*
+*INSERT COOL Results HERE*
 ![image](https://github.com/CU-ESIIL/FCC24_Group_6/assets/122820473/afd29635-ee50-4c2e-932c-5933cab01bf9)
 ![image](https://github.com/CU-ESIIL/FCC24_Group_6/assets/122820473/683d9846-a9e3-4516-a379-0e3bf6cd8f95)
 
