@@ -35,11 +35,6 @@ The figure illustrates the spatial variability of Above Ground Biomass Density i
 ### Example of Disturbance Impact on Above Ground Biomass - Wildfire
 ![image](https://github.com/CU-ESIIL/FCC24_Group_6/assets/122820473/a7fc6657-223f-42cf-8c9d-6adfd5c9f285)
 
-# Results: Random Forest Model vs. Baseline Interpolation - The Biomass Prediction
-![image](https://github.com/CU-ESIIL/FCC24_Group_6/assets/24379590/ba8163e1-da49-447f-8244-888f709f5729)
-
-*The random forest model outperformed the baseline spatial interpolation model based on RMSE and R^2.* 
-
 # Methods - The Model and Data Exploration
 ## Data Analysis
 
@@ -92,6 +87,10 @@ model.non.spatial <- spatialRF::rf(
 ### Model Evaluation
 Both models (the baseline inverse-distance weighting model and the random forest model) were trained on a training set consisting of 70% of the GEDI data rows. 15% of the data were used as a validation set and 15% were withheld as a final test set. After training, we computed RMSE and R^2 on the validation set to compare.
 
+# Results: Random Forest Model vs. Baseline Interpolation - The Biomass Prediction
+![image](https://github.com/CU-ESIIL/FCC24_Group_6/assets/24379590/ba8163e1-da49-447f-8244-888f709f5729)
+
+*The random forest model outperformed the baseline spatial interpolation model based on RMSE and R^2.* 
 
 ## Results: Variable Importance
 ![image](https://github.com/CU-ESIIL/FCC24_Group_6/assets/24379590/265cfad0-4ff5-4ae3-9e93-62f4f1d144dd)
