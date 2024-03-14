@@ -7,17 +7,17 @@
 
 # Data Sources
 *Response:*
-GEDI L4A Footprint Biomass product converts each high-quality waveform to an AGBD prediction (Mg/ha)
++ GEDI L4A Footprint Biomass product converts each high-quality waveform to an AGBD prediction (Mg/ha)
 *Predictors/features:*
 Geographic location
-30-yr normals for climatic water deficit (‘def’) and actual evapotranspiration (aet); TopoFire Holden et al.
-Tree cover; MODIS
-Peak NDVI; Landsat
-Forest type; MODIS
-Time since disturbances; EarthLab “disturbance stack”
-Fire
-Insect outbreak
-Hotter drought 
++ 30-yr normals for climatic water deficit (‘def’) and actual evapotranspiration (aet); TopoFire Holden et al.
++ Tree cover; MODIS
++ Peak NDVI; Landsat
++ Forest type; MODIS
++ Time since disturbances; EarthLab “disturbance stack”
++ Fire
++ Insect outbreak
++ Hotter drought 
 
 # Methods - The Model and Data Exploration
 ## Data Analysis
