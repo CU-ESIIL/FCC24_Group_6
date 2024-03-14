@@ -1,19 +1,31 @@
-# Above Ground Biomass Legacies: Predicting Trajectories of Post Disturbance Recovery Across the Southern Rocky Mountain Ecoregion - Team 6
-*Abstract* - Forests play a vital role in mitigating climate change impacts through carbon sequestration. However, forests are under threat from increasingly frequent and severe disturbances like wildfires, droughts, and insect outbreaks. Using remote sensing data, forests can be monitored across large spatial scales and at increasingly high resolutions to observe forest measurements. The Global Ecosystem Dynamics Investigation (GEDI) provides high resolution laser footprints of forests at large spatial scales, enabling estimates of above-ground biomass density (AGBD). Utilizing these AGBD footprints in combination with data on disturbance histories, we predict AGBD for sites not covered by GEDI and model forest recovery trajectories following disturbances in the Southern Rocky Mountain ecoregion.
+# Post-disturbance aboveground biomass trajectories across the Southern Rocky Mountain Ecoregion 
+Authors (listed alphabetically)
 
-*Project Questions*
-*1. What is the relative importance of different disturbance combinations in shaping above ground biomass density?
-*2. How do post-disturbance biomass trajectories vary among disturbance types and combinations?
-*3. Do models that include information about disturbance predict biomass density better than models that do not?
+Tyler Hoecker, Vibrant Planet PBC
 
+Luis X. de Pablo, University of Colorado Boulder, Dept. of Ecology and Evolutionary Biology/Biofrontiers Institute 
 
-*Project Description* - The goal of this project is to understand trajectories (via a random forest model using GEDI data) of above ground carbon recovery across combinations of disturbance legacies among wildfire, drought, and insects. We aim to understand these trajectories and create a predictive model to interpolate GEDI footprint data and understand how these disturbances impact above ground biomass density.
+Bre Powers, Northern Arizona University, School of Forestry 
 
-# Data Sources
-*Response:*
+Kylen Solvik, University of Colorado Boulder, Depart. of Geography
+
+Natalie Wiley, Brilliant Earth 
+
+### Project Description
+Forests could provide a nature-based solution to mitigate climate-change impacts by fixing and sequestering carbon. However, forests are under threat from increasingly frequent and severe disturbances including wildfire, drought, and insect outbreak. Using Earth observation data, forests can be monitored across large spatial scales and at increasingly high resolutions to observe forest measurements. The Global Ecosystem Dynamics Investigation (GEDI) provides high resolution laser footprints of forests at large spatial scales, enabling estimates of above-ground biomass density (AGBD). Utilizing these AGBD footprints in combination with data on disturbance histories, we predict AGBD for sites not covered by GEDI and model forest recovery trajectories following disturbances in the Southern Rocky Mountain ecoregion. The goal of this project is to understand trajectories of AGBD recovery after interacting wildfire, drought, and insect disturbances. We aim to understand the role of individual and interacting disturbances as drivers of AGBD and predict contemporary AGBD across the study region using GEDI footprint data.
+
+### Research Questions
+1. What is the relative importance of different disturbance combinations in shaping above ground biomass density?
+2. How do post-disturbance biomass trajectories vary among disturbance types and combinations?
+3. Do models that include information about disturbance predict biomass density better than models that do not?
+
+# Methods 
+
+## Data Sources
+*Response variable:*
 + GEDI L4A Footprint Biomass product converts each high-quality waveform to an AGBD prediction (Mg/ha)
   
-*Predictors/features:*
+*Predictor variables/features:*
 + Geographic location (lat/lon)
 + 30-yr normals for climatic water deficit (‘def’) and actual evapotranspiration ('aet'); TopoFire Holden et al.
 + Tree cover; MODIS
@@ -35,13 +47,13 @@ The figure illustrates the spatial variability of Above Ground Biomass Density i
 ### Example of Disturbance Impact on Above Ground Biomass - Wildfire
 ![image](https://github.com/CU-ESIIL/FCC24_Group_6/assets/122820473/a7fc6657-223f-42cf-8c9d-6adfd5c9f285)
 
-# Methods - The Model and Data Exploration
 ## Data Analysis
 
 ### Baseline  (null) model: Inverse-distance weighted interpolation
-To have a baseline to compare against, we performed spatial interpolation using inverse distance weighting on the GEDI above-ground biomass density point estimates. 
+We evaluated the perfomance of a model that included informaiton about disturbance and environmental conditions against a null model based only on geographic location. We developed our null model based on a simple spatial interpolation among GEDI footprints using inverse distance weighting. Estimates were based on values of the 50 nearest neighbors, weighted by a power of 2 (i.e., inverse distance squared). We used the `gstat` package, impleneted in R.  
 
 ```
+# Build IDW model
 gs <- gstat(formula = agbd~1, 
             locations = ~x+y, 
             data = full_df[,c("x","y","agbd")], 
