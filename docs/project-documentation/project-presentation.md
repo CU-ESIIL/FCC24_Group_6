@@ -2,9 +2,9 @@
 *Abstract* - Forests play a vital role in mitigating climate change impacts through carbon sequestration. However, forests are under threat from increasingly frequent and severe disturbances like wildfires, droughts, and insect outbreaks. Using remote sensing data, forests can be monitored across large spatial scales and at increasingly high resolutions to observe forest measurements. The Global Ecosystem Dynamics Investigation (GEDI) provides high resolution laser footprints of forests at large spatial scales, enabling estimates of above-ground biomass density (AGBD). Utilizing these AGBD footprints in combination with data on disturbance histories, we predict AGBD for sites not covered by GEDI and model forest recovery trajectories following disturbances in the Southern Rocky Mountain ecoregion.
 
 *Project Questions*
-1. What is the relative importance of different disturbance combinations in shaping above ground biomass density?
-2. How do post-disturbance biomass trajectories vary among disturbance types and combinations?
-3. Do models that include information about disturbance predict biomass density better than models that do not?
+*1. What is the relative importance of different disturbance combinations in shaping above ground biomass density?
+*2. How do post-disturbance biomass trajectories vary among disturbance types and combinations?
+*3. Do models that include information about disturbance predict biomass density better than models that do not?
 
 
 *Project Description* - The goal of this project is to understand trajectories (via a random forest model using GEDI data) of above ground carbon recovery across combinations of disturbance legacies among wildfire, drought, and insects. We aim to understand these trajectories and create a predictive model to interpolate GEDI footprint data and understand how these disturbances impact above ground biomass density.
@@ -129,11 +129,11 @@ This project utilized GEDI lidar sensor data to map and analyze Above Ground Bio
 
 # Acknowledgments
 Authors:
--Tyler Hoecker, Vibrant Planet
--Bre Powers, Northern Arizona University, School of Forestry
--Natlie Wiley, Brilliant Earth, Sustainability Associate
--Luis X. de Pablo, University of Colorado Boulder, Department of Ecology and Evolutionary Biology/Biofrontiers Institute
--Kylen Solvik, University of Colorado Boulder, Department of Geography
+*Tyler Hoecker, Vibrant Planet
+*Bre Powers, Northern Arizona University, School of Forestry
+*Natalie Wiley, Brilliant Earth, Sustainability Associate
+*Luis X. de Pablo, University of Colorado Boulder, Department of Ecology and Evolutionary Biology/Biofrontiers Institute
+*Kylen Solvik, University of Colorado Boulder, Department of Geography
 
 
 
