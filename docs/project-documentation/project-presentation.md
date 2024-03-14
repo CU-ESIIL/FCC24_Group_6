@@ -1,23 +1,28 @@
 # Project presentation overview
 *Abstract* - Forests play a vital role in mitigating climate change impacts through carbon sequestration. However, forests are under threat from increasing disturbances like wildfires, droughts, and insect outbreaks. Using remote sensing data, forests can be monitored across large spatial scales and at increasingly high resolutions to observe forest measurements. The Global Ecosystem Dynamics Investigation (GEDI) provides high resolution laser footprints of forests at large spatial scales, enabling estimates of above-ground biomass density (AGBD). Utilizing these AGBD footprints in combination with data on disturbance histories, we predict AGBD for sites not covered by GEDI and model forest recovery trajectories following disturbances in the Southern Rocky Mountain ecoregion.
 
-*Project Question* - How does the trajectory of carbon recovery vary among different combinations of disturbance legacies?
+*Project Questions*
+1. What is the relative importance of different disturbance combinations in shaping above ground biomass density?
+2. How do post-disturbance biomass trajectories vary among disturbance types and combinations?
+3. Do models that include information about disturbance predict biomass density better than models that do not?
+
 
 *Project Description* - The goal of this project is to understand trajectories (via a spatial random forest model using GEDI data) of above ground carbon recovery across combinations of disturbance legacies among wildfire, drought, and insects. We aim to understand these trajectories and create a predictive model to interpolate GEDI footprint data and understand how these disturbances impact above ground biomass density.
 
 # Data Sources
 *Response:*
 + GEDI L4A Footprint Biomass product converts each high-quality waveform to an AGBD prediction (Mg/ha)
+  
 *Predictors/features:*
-Geographic location
-+ 30-yr normals for climatic water deficit (‘def’) and actual evapotranspiration (aet); TopoFire Holden et al.
++ Geographic location (lat/lon)
++ 30-yr normals for climatic water deficit (‘def’) and actual evapotranspiration ('aet'); TopoFire Holden et al.
 + Tree cover; MODIS
 + Peak NDVI; Landsat
-+ Forest type; MODIS
++ Forest type; NLCD
 + Time since disturbances; EarthLab “disturbance stack”
-+ Fire
-+ Insect outbreak
-+ Hotter drought 
+  + Fire
+  + Insect outbreak
+  + Hotter drought 
 
 # Methods - The Model and Data Exploration
 ## Data Analysis
