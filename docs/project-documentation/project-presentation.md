@@ -1,9 +1,9 @@
 # Project presentation overview
-*Abstract*  Forests play a vital role in mitigating climate change impacts through carbon sequestration. However, forests are under threat from increasing disturbances like wildfires, droughts, and insect outbreaks. Using remote sensing data, forests can be monitored across large spatial scales and at increasingly high resolutions to observe forest measurements. The Global Ecosystem Dynamics Investigation (GEDI) provides high resolution laser footprints of forests at large spatial scales, enabling estimates of above-ground biomass density (AGBD). Utilizing these AGBD footprints in combination with data on disturbance histories, we predict AGBD for sites not covered by GEDI and model forest recovery trajectories following disturbances in the Southern Rocky Mountain ecoregion.
+*Abstract* - Forests play a vital role in mitigating climate change impacts through carbon sequestration. However, forests are under threat from increasing disturbances like wildfires, droughts, and insect outbreaks. Using remote sensing data, forests can be monitored across large spatial scales and at increasingly high resolutions to observe forest measurements. The Global Ecosystem Dynamics Investigation (GEDI) provides high resolution laser footprints of forests at large spatial scales, enabling estimates of above-ground biomass density (AGBD). Utilizing these AGBD footprints in combination with data on disturbance histories, we predict AGBD for sites not covered by GEDI and model forest recovery trajectories following disturbances in the Southern Rocky Mountain ecoregion.
 
-*Project Question* How does the trajectory of carbon recovery vary among different combinations of disturbance legacies?
+*Project Question* - How does the trajectory of carbon recovery vary among different combinations of disturbance legacies?
 
-*Project Description* The goal of this project is to understand trajectories (via a spatial random forest model using GEDI data) of above ground carbon recovery across combinations of disturbance legacies among wildfire, drought, and insects. We aim to understand these trajectories and create a predictive model to interpolate GEDI footprint data and understand how these disturbances impact above ground biomass density.
+*Project Description* - The goal of this project is to understand trajectories (via a spatial random forest model using GEDI data) of above ground carbon recovery across combinations of disturbance legacies among wildfire, drought, and insects. We aim to understand these trajectories and create a predictive model to interpolate GEDI footprint data and understand how these disturbances impact above ground biomass density.
 
 # Data Sources
 *Response:*
@@ -38,7 +38,7 @@ Random forest modeling was performed on CyVerse using the R [spatialRF](https://
 `KYLEN - *INSERT SNIPPET OF MODEL CODE HERE`
 
 ### Model Evaluation
-Both models (kriging and random forest) were trained on a training set consisting of 70% of the GEDI data rows. 15% of the data were used as a validation set and 15% were withheld as a final test set. After training, we computed RMSE and R^2 on the validation set to compare. 
+Both models (null and random forest) were trained on a training set consisting of 70% of the GEDI data rows. 15% of the data were used as a validation set and 15% were withheld as a final test set. After training, we computed RMSE and R^2 on the validation set to compare. 
 
 ![image](https://github.com/CU-ESIIL/FCC24_Group_6/assets/122820473/d245f085-78ab-4553-8a78-255fe7866c94)
 
@@ -59,7 +59,11 @@ KYLEN - *INSERT COOL Results DESCRIPTION HERE*
 ![image](https://github.com/CU-ESIIL/FCC24_Group_6/assets/122820473/afd29635-ee50-4c2e-932c-5933cab01bf9)
 ![image](https://github.com/CU-ESIIL/FCC24_Group_6/assets/122820473/683d9846-a9e3-4516-a379-0e3bf6cd8f95)
 
-# Disturbance Recover Trajectories
+## Results: Response Surfaces
+![image](https://github.com/CU-ESIIL/FCC24_Group_6/assets/122820473/7091c3c6-2fdd-41bb-ac16-5257f4334a1f)
+TYLER - ADD CONTEXT TO THIS FIGURE HERE
+
+## Results: Disturbance Recover Trajectories
 ![image](https://github.com/CU-ESIIL/FCC24_Group_6/assets/122820473/1e18caa7-1738-4a66-8ee6-6dba98515970)
 LUIS - ADD SHORT DESCRIPTION OF FIGURE HERE
 
@@ -67,10 +71,11 @@ LUIS - ADD SHORT DESCRIPTION OF FIGURE HERE
   SOMEONE ADD STUFF HERE MY BRAIN HAS ROTTED
 
 
+# Forest Carbon Code Fest Art by Luis X. de Pablo
 
 
 
 
 
-# Presentation
+
 
