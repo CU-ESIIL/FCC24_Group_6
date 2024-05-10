@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/764820123.svg)](https://zenodo.org/doi/10.5281/zenodo.11168336)
+
 # Team 6 - Forest Carbon Code Fest
 
 Welcome to the Team 6 repository, an integral part of ESIIL and Earth Lab's Forest Carbon Codefest. 
